@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.images > a > img {
+  width: 185px !important;
+  height: 260px !important;
+}

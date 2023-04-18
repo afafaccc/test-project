@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/movie.css" />
   </head>
   <body>
     <div class="images">
@@ -14,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
       const movieURL =
-        "https://api.themoviedb.org/3/movie/popular?api_key=94b352943d5fd796727f0812147d7452&language=ko-KR&page=1";
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=94b352943d5fd796727f0812147d7452&language=ko-KR&page=1";
       $.ajax({
         type: "GET",
         url: movieURL,
