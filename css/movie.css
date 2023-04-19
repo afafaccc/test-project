@@ -1,6 +1,23 @@
 @charset "utf-8";
 
-.images > a > img {
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.images > .sec > a > img {
   width: 185px !important;
   height: 260px !important;
+  /* position: relative; */
+}
+
+.images > .sec > a {
+  display: flex;
+  justify-content: center;
+}
+
+.images > .sec > p {
+  text-align: center;
 }
