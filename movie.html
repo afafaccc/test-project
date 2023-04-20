@@ -83,11 +83,10 @@
     </header>
     <main>
       <div class="container">
-        <div class="col-md-5"></div>
-        <div class="images col-md-5">
+        <div class="col-md-4"><h2>현재 상영중인 영화</h2></div>
+        <ol class="images col-md-8">
           <!-- <div class="sec"></div> -->
-        </div>
-        <div class="col-md-2"></div>
+        </ol>
       </div>
     </main>
     <footer>
@@ -123,7 +122,12 @@
             // $(".images .sec").append(`<p>${result.title}</p>`);
 
             $(".images").append(
-              `<div class="sec"><a href="./detail.html?id=${result.id}"><img src="${imgURL}"></a><p>${result.title}</p></div>`
+              `<li class="sec col-sm-3">
+                <div class="movie_list">
+                <a href="./detail.html?id=${result.id}"></a>
+                <img src="${imgURL}">
+                <div class="movie_title"><div class="title_nm">${result.overview}</div></div><p>${result.title}</p>
+                <div></li>`
             );
           }
         },
